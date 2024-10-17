@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV Zetha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border: 5px solid #e67e22;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styles with Shapes */
+        .section {
+            margin-bottom: 30px;
+            background-color: #e67e22;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 3px solid #ffffff;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .skills ul, .experience ul, .education ul, .certifications ul, .organization ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            padding: 5px 0;
+        }
+
+        .education ul li, .experience ul li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .education ul li span, .experience ul li span {
+            font-weight: bold;
+        }
+
+        /* Custom shapes behind each section */
+        .section::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .section::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 150px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .highlight {
+            color: #e67e22;
+        }
+
+        /* Background Styling */
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 300px;
+            height: 300px;
+            background-color: #e67e22;
+            border-radius: 50%;
+            z-index: -2;
+            opacity: 0.5;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 250px;
+            height: 250px;
+            background-color: #e67e22;
+            border-radius: 50%;
+            z-index: -2;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <!-- Foto profil saja tanpa teks -->
+        <img src="https://siakadu.unila.ac.id/uploads/fotouser/thumb/296462.jpg?55386" alt="Profile Picture">
+        <p class="contact-info">
+            Email: <a href="mailto:crbxzetha@gmail.com">crbxzetha@gmail.com</a><br>
+            WhatsApp: <a href="https://wa.me/6281378610827">0813-7861-0827</a><br>
+            LinkedIn: <a href="https://linkedin.com/in/zetha">linkedin.com/in/zetha</a>
+        </p>
+    </header>
+
+    <section class="section about">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p>Hi! Nama saya Zetha Delyan Pratama, seorang mahsiswa jurusan pendidikan TI dengan pengetahuan dalam berbagai bahasa pemrograman dan desain antarmuka. Saya memiliki pengalaman dalam pengembangan web dan tertarik pada teknologi serta inovasi baru.</p>
+    </section>
+
+    <section class="section skills">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <li>Programming Languages: JavaScript, HTML, CSS</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+        </ul>
+    </section>
+
+    <section class="section languages">
+        <h2 class="section-title">Bahasa</h2>
+        <ul>
+            <li>Bahasa Indonesia (Native)</li>
+            <li>English (Fluent)</li>
+        </ul>
+    </section>
+
+    <section class="section experience">
+        <h2 class="section-title">Pengalaman</h2>
+        <ul>
+            <li>
+                <span>Web Developer</span> - Analisis dan desain komputer | 2024 - Present
+                <p>Mengembangkan dan mengelola situs web serta aplikasi berbasis web, mengoptimalkan tampilan UI untuk pengguna.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section organization">
+        <h2 class="section-title">Pengalaman Organisasi</h2>
+        <ul>
+            <li>anggota komunitas editing adobe after effect | 2022 - Present</li>
+            <li> anggota komunitas pengembangan apk editing terbaru | 2022 - Present</li>
+            <li>anggota Komunitas cinematic video | 2024 - Present</li>
+        </ul>
+    </section>
+
+    <section class="section education">
+        <h2 class="section-title">Pendidikan</h2>
+        <ul>
+            <li>
+                <span>Pendidikan tekhnologi informasi</span> - Universitas lampung | 2023
+                 <span>Pendidikan SMA</span> - SMAN 2 PAINAN | 2020 - 2023
+            </li>
+        </ul>
+    </section>
+
+    <section class="section certifications">
+        <h2 class="section-title">Sertifikasi</h2>
+        <ul>
+            <li>Ketua pelaksana pelatihan kepenulisan</li>
+            <li>Ketua pelaksana eksakta sport</li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
